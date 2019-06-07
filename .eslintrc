@@ -1,0 +1,37 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true,
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "plugins": [
+    "module-resolver"
+  ],
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "no-use-before-define": "off",
+    "react/prop-types": "off",
+    "comma-dangle": "off"
+  },
+  "globals": {
+    "fetch": false,
+    "require": false,
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    },
+    "import/extensions": [
+      ".js",
+      ".json"
+    ]
+  }
+}
